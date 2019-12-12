@@ -1,0 +1,19 @@
+	<Timers>
+		<TimerGUID>70554cb9-e1c2-4f45-87c7-038d062fd688</TimerGUID>
+		<CurrentTicks>0</CurrentTicks>
+		<Name>template</Name>
+		<Note></Note>
+		<Autostart>false</Autostart>
+		<Autoreset>false</Autoreset>
+		<Hotkey></Hotkey>
+		<Category>My Timers</Category>
+		<NoteHeight>400</NoteHeight>
+		<NoteWidth>400</NoteWidth>
+		<FlagIcon>0</FlagIcon>
+		<IsCountdown>false</IsCountdown>
+		<DefaultTicks>0</DefaultTicks>
+		<LastStart>0001-01-01T00:00:00-05:00</LastStart>
+		<LastStop>0001-01-01T00:00:00-05:00</LastStop>
+		<LastReset>0001-01-01T00:00:00-05:00</LastReset>
+		<ControlType>1</ControlType>
+	</Timers>
