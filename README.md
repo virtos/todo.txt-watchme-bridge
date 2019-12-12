@@ -10,16 +10,19 @@ To add time tracking capabilities I have chosen [Watchme](http://www.flamebrain.
 - If an item (todo.txt task) already exist as a timer in Watchme, it will remain there keeping the current time.
 
 ## Usage of todo-watchme_bridge:
-todo-watchme_bridge [flags]
-  -td string
-        A source todo.txt file name (default "todo.txt")
+
+```
+todo-watchme_bridge [flags]  
+  -td string  
+        A source todo.txt file name (default "todo.txt")  
   -tt string
         Todo item template file name (default "template.xml")
   -w string
         WatchMe configuration file name (default "WatchMeConfig.xml")
   -h help
-
 If no path specified, the program will look in the current directory
+```
+HINT: it is easy to create a simple batch file that calls this utility and then runs Watchme. Running this batch file will always make sure you always add current tasks for tracking.
 
 # Compiling
 
