@@ -1,10 +1,10 @@
 # todo.txt - watchme bridge
 
-[todo.txt](http://todotxt.org/) is a format for tracking todos. Unfortunately all implementations lack time tracking capabilities. And to tell the truth, it doesn't belong there as the idea behind it is to be provide a very solution.
+[todo.txt](http://todotxt.org/) is a format for tracking todos. Unfortunately all implementations lack time tracking capabilities. And to tell the truth, it doesn't belong there as the idea behind it is to be provide a very simple solution.
 
 To add time tracking capabilities I have chosen [Watchme](http://www.flamebrain.com/download-watchme/) utility.
 
-This program parses a todo.txt file, selects tasks assigned for today and adds them to the Watchme config file as timers. There a couple of rules helping with usability:
+**todo-watchme_bridge** parses a todo.txt file, selects tasks assigned for today and adds them to the Watchme config file as timers. There a couple of rules helping with usability:
 
 - No existing timers are destroyed or updated
 - If an item (todo.txt task) already exist as a timer in Watchme, it will remain there keeping the current time.
