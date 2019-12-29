@@ -22,7 +22,7 @@ todo-watchme_bridge [flags]
   -h help
 If no path specified, the program will look in the current directory
 ```
-HINT: it is easy to create a simple batch file that calls this utility and then runs Watchme. Running this batch file will always make sure you always add current tasks for tracking.
+HINT: it is easy to create a simple batch file that calls this utility and then runs Watchme. Running this batch file will always make sure you always add current tasks for tracking. An example of this file is included (_updateTasks.bat).
 
 # Compiling
 
