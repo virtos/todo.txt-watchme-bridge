@@ -9,6 +9,7 @@ import (
 	"log"
 	"math/rand"
 	"os"
+	"sort"
 	"strings"
 	"time"
 )
@@ -156,10 +157,7 @@ func init() {
 
 // Take Todo items from a todo.txt file and write them into a watchme config file
 func main() {
-	// wmConfigFN := "WatchMeConfig.xml"
 	wmTemplateBackup := wmConfigFN + ".bak"
-	// templateFN := "template.xml"
-	//	todoFN := "todo.txt"
 	rand.Seed(time.Now().UnixNano())
 
 	todos, err := getCurTodos(todoFN)
@@ -206,6 +204,12 @@ func main() {
 			configurationData.Timers = append(configurationData.Timers, addTimer)
 		}
 	}
+
+	// Sort All the tasks, including existing ones
+	sort.Slice(configurationData.Timers, func(i, j int) bool {
+		return configurationData.Timers[i].Name < configurationData.Timers[j].Name
+	})
+
 	// Write the output
 	os.Remove(wmTemplateBackup)
 	err = os.Rename(wmConfigFN, wmTemplateBackup)
